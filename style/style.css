@@ -1,0 +1,36 @@
+.top {
+  padding: 3% 5%;
+  background-color: #222;
+}
+.navbar{
+  margin-left: -10px;
+}
+.home{
+  font-size: 30px;
+}
+.box-images {
+  width: 104%;
+  height: 100%;
+  border: 1px solid #fff;
+}
+
+.nav-item{
+  padding-left: 6rem;
+  padding-left: 2rem;
+  font-size: 1.4rem;
+}
+.gallary-box{
+  margin-top: 2%;
+  background-color: white;
+  border: 4px solid #0a0107;
+}
+.box{
+  margin: 1% 0;
+  border: 3px solid rgb(43, 3, 3);
+}
+.icon{
+  color: white;
+  font-size: 30px;
+  margin-left:20px;
+  padding-right: 10px;
+}
