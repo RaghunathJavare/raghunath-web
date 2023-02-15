@@ -1,4 +1,8 @@
 const displayPic = document.querySelectorAll(".box");
+const pageHidden=document.querySelector('.gallary-box');
+
+const pageOpen=document.querySelector('#page-open');
+
 const overlay = document.querySelector(".overlay");
 for (let i = 0; i < displayPic.length; i++)
   displayPic[i].addEventListener("click", function () {
@@ -11,3 +15,7 @@ for (let i = 0; i < displayPic.length; i++)
       displayPic[i].style = "";
     });
   });
+
+  pageOpen.addEventListener('click',function(){
+    pageHidden.classList.remove('hidden');
+  })
