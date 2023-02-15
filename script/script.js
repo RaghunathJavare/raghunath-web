@@ -1,7 +1,17 @@
-const displayPic = document.querySelectorAll(".box");
-const pageHidden=document.querySelector('.gallary-box');
+// selecting elements 
 
-const pageOpen=document.querySelector('#page-open');
+const displayPic = document.querySelectorAll(".box");
+const homeLick=document.querySelector('.home')
+
+const photoLick=document.querySelector('.photo')
+
+const pageHidden=document.querySelector('.hide-1');
+
+const pageOpen=document.querySelector('.hide-2');
+
+
+
+// section background color hide 
 
 const overlay = document.querySelector(".overlay");
 for (let i = 0; i < displayPic.length; i++)
@@ -16,6 +26,7 @@ for (let i = 0; i < displayPic.length; i++)
     });
   });
 
-  pageOpen.addEventListener('click',function(){
-    pageHidden.classList.remove('hidden');
+  photoLick.addEventListener('click',function(){
+    pageOpen.classList.remove('hidden');
+    pageHidden.classList.add('hidden');
   })

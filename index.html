@@ -11,6 +11,8 @@
     <!-- font Awsome link -->
     <script src="https://kit.fontawesome.com/a87e8bf9f7.js" crossorigin="anonymous"></script>
 
+    <!-- google fonts licnk -->
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&family=Montserrat:wght@700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <!-- css link  -->
 
     <link rel="stylesheet" href="style/style.css">
@@ -24,7 +26,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin=`"anonymous"></script>
 </head>
 <body>
-    <section class="top">
+
+    <!-- page-navbar 💥💥💥💥💥💥💥 -->
+
+
+    <section id="web-navbar">
         <div class="container-fluid">
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
            <a class="navbar-brand home" href="
@@ -36,7 +42,7 @@
                   <ul class="navbar-nav">
                
               <li class="nav-item">
-                <a class="nav-link active" id="page-open" href="#">Photos</a>
+                <a class="nav-link active photo" href="#">Photos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active " href="#">Videos</a>
@@ -47,8 +53,31 @@
             </ul>
            </div>
             </nav>
+</section>
 
-        <div class="row gallary-box hidden">
+<!-- home-page 🏠🏠🏠🏠-->
+
+<section id="home-page" class="hide-1">
+    <div class="row">
+        <div class="col-lg-6">
+            <h1>Raghunath Javare</h1>
+            <p><i class="fa-solid fa-laptop-code page-icon"></i>#web-devloper</p>
+
+        </div>
+        <div class="col-lg-6">
+            <img src="images/my-profile-img.png"class="profile-img" alt="profile-image">
+        </div>
+    </div>
+
+    </section>
+
+
+
+<!-- photo-page 📷📷📷📷📷📷 -->
+
+<section id="photo-page" class="hide-2 hidden">
+
+        <div class="row gallary-box">
             <div class="col-lg-3 col-md-4 col-6 box">
                 <img class="box-images" src="images/background-12.jpg">
             </div>
@@ -109,8 +138,7 @@
             </div>
             <div class="col-lg-3 col-md-4 col-6 box">
                 <img class="box-images" src="images/background-9.jpg">   
-            </div>
-            
+            </div> 
         </div>
         <div class="overlay hidden"></div>
     </section>
