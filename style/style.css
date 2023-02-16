@@ -1,7 +1,7 @@
 /* web-navbar 💥💥💥💥 */
 
 #web-navbar {
-  padding: 3% 10%;
+  padding: 3% 6%;
   background-color: #222;
 }
 .nav-item {
@@ -113,5 +113,10 @@ p {
     width: 200px;
     margin-top: 20px;
   }
+
+  .nav-item,.home,.icon,.navbar-toggler-icon{
+    font-size: 1rem;
+  }
+  
   
 }
