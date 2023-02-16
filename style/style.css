@@ -1,7 +1,7 @@
 /* web-navbar 💥💥💥💥 */
 
 #web-navbar {
-  padding: 3% 15%;
+  padding: 3% 10%;
   background-color: #222;
 }
 .nav-item {
@@ -27,44 +27,37 @@
 
 /* home-page🏠🏠🏠🏠 */
 
- #home-page{
-  padding: 3% 15%;
+#home-page {
   background-color: #222;
   color: white;
+  padding: 3% 15%;
   text-align: center;
-} 
-.profile-img{
+
+}
+.profile-img {
   position: relative;
-width: 20rem;
-  
+  width: 20rem;
 }
 
-h1{
-font-size: 4rem;
-font-family: 'Montserrat', sans-serif;
+h1 {
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
 }
-p{
+p {
   font-size: 2rem;
   margin-top: 4rem;
-  font-family: 'Gentium Book Plus', serif;  
+  font-family: 'MOntserrat';
 }
-.page-icon{
-  margin-right:2rem ;
+.page-icon {
+  margin-right: 2rem;
 }
-
-
-
-
-
 
 /* photo-page📷📷📷📷 */
 
-
-#photo-page{ 
-    padding: 3% 15%;
-    background-color: #222;
-  }
-
+#photo-page {
+  padding: 3% 15%;
+  background-color: #222;
+}
 
 .box-images {
   width: 104%;
@@ -79,7 +72,6 @@ p{
   background-color: transparent;
   border: 1px solid #0a0107;
 }
-
 
 .box {
   margin: 1% 0;
@@ -100,4 +92,26 @@ p{
 
 .hidden {
   display: none;
+}
+
+
+@media (max-width:470px) {
+  h1{
+    position: relative;
+    left: -10px;
+    font-size: 40px;
+  }
+  p{
+    margin: 20px;
+    font-size: 20px;
+    margin-bottom:30px;
+  }
+  .page-icon{
+    margin-right: 10px;
+  }
+  .profile-img{
+    width: 200px;
+    margin-top: 20px;
+  }
+  
 }
