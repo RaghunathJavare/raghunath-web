@@ -2,7 +2,7 @@
 
 #web-navbar {
   padding: 3% 6%;
-  background-color: #222;
+  background-color: hsl(0, 0%, 13%);
 }
 .nav-item {
   padding-left: 6rem;
@@ -95,6 +95,23 @@ p {
 }
 
 
+/* seiction my-projects */
+
+.carousel{
+  padding: 3% 15%;
+  background-color: #0a0107;
+}
+.project-text{
+  font-size: 6.2rem;
+  color: #fff;
+  font-size:'Montserrat';
+}
+.btn{
+  padding: 5px 70px;
+  font-size: 1.2rem;
+}
+
+
 @media (max-width:470px) {
   h1{
     position: relative;
@@ -117,6 +134,5 @@ p {
   .nav-item,.home,.icon,.navbar-toggler-icon{
     font-size: 1rem;
   }
-  
   
 }
