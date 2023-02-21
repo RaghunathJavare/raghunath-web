@@ -1,4 +1,10 @@
 /* web-navbar 💥💥💥💥 */
+body{
+font-family:'Montserrat';
+}
+.padding-applyer{
+  padding: 3% 10%;
+}
 
 #web-navbar {
   padding: 3% 6%;
@@ -42,6 +48,7 @@
 h1 {
   font-size: 4rem;
   font-family: "Montserrat", sans-serif;
+  animation: mymove 5s linear infinite;
 }
 p {
   font-size: 2rem;
@@ -52,8 +59,32 @@ p {
   margin-right: 2rem;
 }
 
+/* section dice game  */
+#dice-game{
+text-align: center;
+background-color: #efe9e9;
+}
+.game-text{
+  font-size: 3.5rem;
+  color: #222;
+}
+.game-img{
+  width: 100%;
+  margin-top:5%;
+  
+}
+#btn-play{
+  margin: 1rem 0.2rem;
+  
+}
+
+
+
+
+
 /* photo-page📷📷📷📷 */
 
+/*
 #photo-page {
   padding: 3% 15%;
   background-color: #222;
@@ -85,31 +116,18 @@ p {
   width: 100%;
   height: 1000%;
   background-color: black;
-  /* background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(3px);  */
+   background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);  
   z-index: 5;
 }
 
 .hidden {
   display: none;
 }
-
+*/
 
 /* seiction my-projects */
 
-.carousel{
-  padding: 3% 15%;
-  background-color: #0a0107;
-}
-.project-text{
-  font-size: 6.2rem;
-  color: #fff;
-  font-size:'Montserrat';
-}
-.btn{
-  padding: 5px 70px;
-  font-size: 1.2rem;
-}
 
 
 @media (max-width:470px) {
@@ -134,5 +152,25 @@ p {
   .nav-item,.home,.icon,.navbar-toggler-icon{
     font-size: 1rem;
   }
-  
+ .game-text{
+    font-size: 20px;
+  }
+  #btn-play{
+    font-size: 10px;
+  }
 }
+
+
+
+/* adding keyFrames  */
+
+
+@keyframes mymove {
+  0%   {color: rgb(216, 90, 90);}
+  25%  {color: rgb(205, 205, 97);}
+  50%  {color: rgb(98, 98, 185);}
+  100% {color: rgb(126, 201, 126);}
+}
+
+/* pcydo classes  */
+

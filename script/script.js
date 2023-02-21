@@ -1,31 +1,48 @@
-// selecting elements 
+"use strict";
+const mahesh = {
+  firstName: "mahesh",
+  lastname: "borse",
+  age: 21,
+  job: "polich",
+};
+const nikhil = {
+  firstName: "nikhil",
+  lastname: "gurav",
+  age: 19,
+  job: "architecture",
+};
+const yash = {
+  firstName: "yash",
+  lastname: "marathe",
+  age: 20,
+  job: "sybercafe",
+};
 
-const displayPic = document.querySelectorAll(".box");
-const homeLick=document.querySelector('.home')
+const friends = [mahesh, nikhil, yash];
+for (const x of friends) {
+  const friendsName = x.firstName;
+  const friendsAges = x.age;
+  const friendsJOb = x.job;
+  x.sallary = "2 crore";
+  console.log(friendsName);
+  console.log(friendsAges);
+  console.log(friendsJOb);
+  console.log(x.sallary);
+}
 
-const photoLick=document.querySelector('.photo')
+const calcAge = function (birthYears) {
+  const age = 2022 - birthYears;
+  console.log(age);
+};
 
-const pageHidden=document.querySelector('.hide-1');
+const arr = [2004, 2003, 2005, 2006];
+for (const birthYears of arr) {
+  calcAge(birthYears);
+}
 
-const pageOpen=document.querySelector('.hide-2');
-
-const photoLink=document.querySelector('.expand-photo');
-console.log(photoLink);
-
-// section background color hide 
-
-const overlay = document.querySelector(".overlay");
-for (let i = 0; i < displayPic.length; i++)
-  displayPic[i].addEventListener("click", function () {
-      
-      overlay.classList.remove("hidden");
-      
-      overlay.addEventListener("click", function () {
-          overlay.classList.add("hidden");
-    });
-  });
-
-  photoLick.addEventListener('click',function(){
-    pageOpen.classList.remove('hidden');
-    pageHidden.classList.add('hidden');
-  })
+const v1 = ["Dadu", "Javare"];
+for (const v3 of v1) {
+  const v2 = v3.split("");
+  const shortForm = v2[0];
+  console.log(shortForm);
+}
