@@ -171,11 +171,13 @@ background-color: #ecc4c4;
   .gallary-text{
     font-size: 20px;
   }
+  
+}
+@media(max-width:500px){
   .box-images{
     width: 120%;
 
   }
-  
 }
 
 
