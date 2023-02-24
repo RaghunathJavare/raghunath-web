@@ -104,7 +104,7 @@ background-color: #ecc4c4;
 }
 
 .gallary-box {
-  margin-top: -3%;
+  margin-top: 12%;
   background-color: transparent;
   border: 1px solid #0a0107;
 }
@@ -124,6 +124,12 @@ background-color: #ecc4c4;
    background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);  
   z-index: 5;
+}
+.gallary-text{
+  font-size: 3.7rem;
+  margin-top: 4rem;
+  color: #fff;
+  text-align: center;
 }
 
 .hidden {
@@ -163,6 +169,11 @@ background-color: #ecc4c4;
   #btn-play{
     font-size: 10px;
   }
+
+  .gallary-text{
+    font-size: 20px;
+  }
+  
 }
 
 
