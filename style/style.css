@@ -54,6 +54,7 @@ p {
   font-size: 2rem;
   margin-top: 4rem;
   font-family: 'MOntserrat';
+  text-transform:capitalize;
 }
 .page-icon {
   margin-right: 2rem;
@@ -62,8 +63,12 @@ p {
 /* section dice game  */
 #dice-game{
 text-align: center;
+}
+
+.box-first{
 background-color: #ecc4c4;
 }
+
 .game-text{
   font-size: 3.5rem;
   color: #222;
@@ -84,7 +89,7 @@ background-color: #ecc4c4;
 
 /* photo-page📷📷📷📷 */
 
-/*
+
 #photo-page {
   padding: 3% 15%;
   background-color: #222;
@@ -124,7 +129,7 @@ background-color: #ecc4c4;
 .hidden {
   display: none;
 }
-*/
+
 
 /* seiction my-projects */
 
@@ -173,3 +178,8 @@ background-color: #ecc4c4;
 }
 
 
+/* dissplay hidden  */
+
+.hidden{
+  display: none;
+}
