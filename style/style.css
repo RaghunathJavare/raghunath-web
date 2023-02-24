@@ -9,6 +9,7 @@ font-family:'Montserrat';
 #web-navbar {
   padding: 3% 6%;
   background-color: hsl(0, 0%, 13%);
+
 }
 .nav-item {
   padding-left: 6rem;
@@ -36,12 +37,11 @@ font-family:'Montserrat';
 #home-page {
   background-color: #222;
   color: white;
-  padding: 3% 15%;
+  padding: 3% 15% 10%;
   text-align: center;
 
 }
 .profile-img {
-  position: relative;
   width: 20rem;
 }
 
@@ -91,7 +91,7 @@ background-color: #ecc4c4;
 
 
 #photo-page {
-  padding: 3% 15%;
+  padding: 3% 10%;
   background-color: #222;
 }
 
@@ -104,7 +104,7 @@ background-color: #ecc4c4;
 }
 
 .gallary-box {
-  margin-top: 12%;
+  margin-top: 7%;
   background-color: transparent;
   border: 1px solid #0a0107;
 }
