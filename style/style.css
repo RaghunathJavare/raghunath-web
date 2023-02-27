@@ -19,18 +19,18 @@ text-align: center;
 
 }
 .nav-item {
-  margin-left: 4rem;
-  font-size: 1.4rem;
+  margin-left: 3rem;
+  font-size: 1.2rem;
 }
 
 
 .home {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .icon {
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   margin-left: 20px;
   padding-right: 10px;
 }
@@ -165,7 +165,7 @@ background-color: #ecc4c4;
   font-size: 2rem;
   margin: 5% 0 ;
 }
-span{
+.contact-number{
   font-size: 2rem;
 }
 
