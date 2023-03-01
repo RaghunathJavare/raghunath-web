@@ -1,28 +1,25 @@
 /* web-navbar 💥💥💥💥 */
-body{
-font-family:'Montserrat';
-text-align: center;
+body {
+  font-family: "Montserrat";
+  text-align: center;
 }
 
 /* special classes */
 
-.padding-applyer{
+.padding-applyer {
   padding: 3% 10%;
 }
-
 
 /* section web navbar  */
 
 #web-navbar {
   text-align: left;
   background-color: hsl(0, 0%, 13%);
-
 }
 .nav-item {
   margin-left: 3rem;
   font-size: 1.2rem;
 }
-
 
 .home {
   font-size: 20px;
@@ -41,7 +38,6 @@ text-align: center;
   background-color: #222;
   color: white;
   padding: 12% 15% 10%;
-
 }
 .profile-img {
   width: 20rem;
@@ -54,41 +50,34 @@ h1 {
 p {
   font-size: 2rem;
   margin-top: 18rem;
-  text-transform:capitalize;
+  text-transform: capitalize;
 }
 .page-icon {
   margin-right: 2rem;
 }
-.home-text{
-  margin-top:4rem;
+.home-text {
+  margin-top: 4rem;
 }
 
 /* section dice game  */
 
-.box-first{
-background-color: #ecc4c4;
+.box-first {
+  background-color: #ecc4c4;
 }
 
-.game-text{
+.game-text {
   font-size: 3.5rem;
   color: #e66868;
 }
-.game-img{
+.game-img {
   width: 100%;
-  margin-top:5%;
-  
+  margin-top: 5%;
 }
-.btn-play{
+.btn-play {
   margin: 1rem 0.2rem;
-  
 }
-
-
-
-
 
 /* photo-page📷📷📷📷 */
-
 
 #photo-page {
   padding: 1% 0 10%;
@@ -112,7 +101,7 @@ background-color: #ecc4c4;
   border: 1px solit rgb(43, 3, 3);
 }
 
-.gallary-text{
+.gallary-text {
   font-size: 3.7rem;
   margin-top: 2rem;
   color: #fff;
@@ -123,148 +112,137 @@ background-color: #ecc4c4;
 }
 
 /* section my skills  */
- 
-#my-skills{
+
+#my-skills {
   background-color: #fff;
 }
-.skill-head{
+.skill-head {
   font-size: 4rem;
   font-family: monospace;
   margin-top: 1rem;
 }
 
-.skill-img,.small-heading{
+.skill-img,
+.small-heading {
   font-size: 3rem;
   margin-top: 5%;
 }
-.skill-text{
+.skill-text {
   margin-top: 5%;
   font-size: 30px;
   text-align: left;
 }
 
-
-
 /* section contact */
-#contact-me{
-  color:#fff;
-}
-.contact-head{
-  padding-top: 2rem;
-  font-size:2.3rem;
-  margin-bottom:2rem;
-  font-family: 'Montserrat';
+#contact-me {
   color: #fff;
- 
 }
-.contact-page{
-  background-color:black;
-  font-family:monospace;  
+.contact-head {
+  padding-top: 2rem;
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  font-family: "Montserrat";
+  color: #fff;
 }
-.fa-phone{
+.contact-page {
+  background-color: black;
+  font-family: monospace;
+}
+.fa-phone {
   font-size: 2rem;
-  margin: 5% 0 ;
+  margin: 5% 0;
 }
-.contact-number{
+.contact-number {
   font-size: 2rem;
 }
-
-
 
 /* social-icons  */
 
-p,.social-icon{
-  font-size:2rem; 
-  margin-top: 2rem; 
+p,
+.social-icon {
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 
-.fa-instagram:hover{
-  color:rgb(199, 71, 113);
+.fa-instagram:hover {
+  color: rgb(199, 71, 113);
 }
 
-.fa-facebook:hover{
-color: blue;
+.fa-facebook:hover {
+  color: blue;
 }
-.fa-twitter:hover{
+.fa-twitter:hover {
   color: rgb(45, 209, 209);
 }
-.fa-envelope:hover{
-color: rgb(207, 155, 42);
+.fa-envelope:hover {
+  color: rgb(207, 155, 42);
 }
-
-
-
-
 
 /* medis quearys */
 
-@media (max-width:470px) {
-  #home-page{
+@media (max-width: 470px) {
+  #home-page {
     padding-top: 20%;
   }
-  
-  .nav-item{
+
+  .nav-item {
     font-size: 1rem;
   }
 
-  h1{
+  h1 {
     position: relative;
     left: -10px;
     font-size: 40px;
   }
-  p{
+  p {
     margin: 20px;
     font-size: 20px;
-    margin-bottom:30px;
+    margin-bottom: 30px;
   }
-  .page-icon{
+  .page-icon {
     margin-right: 10px;
   }
-  .profile-img{
+  .profile-img {
     width: 200px;
     margin-top: 20px;
   }
-  .text-sizer{
+  .text-sizer {
     font-size: 1.2rem;
   }
 
-  
- .game-text{
+  .game-text {
     font-size: 20px;
   }
-  .btn-play{
+  .btn-play {
     font-size: 10px;
   }
-  
 }
 
-
-
-
-
-
-@media(max-width:500px){
-  .box-images{
+@media (max-width: 500px) {
+  .box-images {
     width: 120%;
   }
-    
-  }
-
-
+}
 
 /* adding keyFrames  */
 
-
 @keyframes mymove {
-  0%   {color: rgb(216, 90, 90);}
-  25%  {color: rgb(205, 205, 97);}
-  50%  {color: rgb(98, 98, 185);}
-  100% {color: rgb(126, 201, 126);}
+  0% {
+    color: rgb(216, 90, 90);
+  }
+  25% {
+    color: rgb(205, 205, 97);
+  }
+  50% {
+    color: rgb(98, 98, 185);
+  }
+  100% {
+    color: rgb(126, 201, 126);
+  }
 }
 
+/* display hidden */
 
-/* dissplay hidden  */
-
-.hidden{
+.hidden {
   display: none;
 }
