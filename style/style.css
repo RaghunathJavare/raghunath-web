@@ -15,12 +15,19 @@ text-align: center;
 
 #web-navbar {
   text-align: left;
-  background-color: hsl(0, 0%, 13%);
+}
+  
+.offcanvas-header {
+  border-bottom: white 2px solid;
+  background-color: #222;
 
 }
+.offcanvas-body,.navbar{
+  background-color: #222;
+}
 .nav-item {
-  margin-left: 3rem;
-  font-size: 1.2rem;
+font-size: 1rem;
+padding:0 2rem;
 }
 
 
