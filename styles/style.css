@@ -16,9 +16,17 @@ body {
   text-align: left;
   background-color: hsl(0, 0%, 13%);
 }
+.offcanvas-body,.navbar{
+  background-color: #222;
+}
+.offcanvas-header{
+   background-color: hsl(0, 0%, 13%);
+  border-bottom: 1px solid white;
+
+}
 .nav-item {
-  margin-left: 3rem;
-  font-size: 1.2rem;
+font-size: 1rem;
+padding:0 2rem;
 }
 
 .home {
