@@ -25,3 +25,4 @@ btnDownload.addEventListener("click", function () {
 //   imgDice.src = "images/my-game-img.png";
 //   btnBack.classList.add("hidden");
 // });
+

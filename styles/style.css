@@ -10,18 +10,18 @@ body {
   padding: 3% 10%;
 }
 
-
 /* section web navbar  */
-
-#web-navbar {
-  text-align: left;
-  background-color: hsl(0, 0%, 13%);
+.navbar {
+  background-color: #18122b;
+  box-shadow: 1px 1px #fff;
 }
 .nav-item {
-  margin-left: 3rem;
+  padding: 0 1rem;
   font-size: 1.2rem;
 }
-
+.text-white:hover {
+  background-color: rgba(127, 255, 212, 0.567);
+}
 .home {
   font-size: 20px;
 }
@@ -33,26 +33,51 @@ body {
   padding-right: 10px;
 }
 
-
 /* home-page🏠🏠🏠🏠 */
 
 #home-page {
-  background-color: #222;
+  background-color: #18122b;
   color: white;
   padding: 12% 15% 10%;
 }
 .profile-img {
   width: 20rem;
+  margin-top: 1rem;
+  opacity: 0.9;
+  border: 1px outset #18122b;
+  border-radius: 50%;
+  animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+  10% {
+    transform: rotate(5deg);
+    box-shadow: 0px 0px 1rem yellow;
+  }
+  20% {
+    transform: rotate(-5deg);
+    box-shadow: 0px 0px 2rem yellow;
+    transform: scale(0.5);
+  }
+}
+.profile-img:hover {
+  opacity: 1;
+  transform: rotate(360deg);
 }
 
 h1 {
-  font-size: 4rem;
-  animation: mymove 5s linear infinite;
+  font-size: 3.5rem;
 }
 p {
   font-size: 2rem;
   margin-top: 18rem;
-  text-transform: capitalize;
+  text-decoration: underline;
+}
+.w {
+  color: rgba(0, 255, 255, 0.718);
+}
+.r {
+  color: rgba(0, 255, 255, 0.718);
+  text-decoration: underline;
 }
 .page-icon {
   margin-right: 2rem;
@@ -61,40 +86,37 @@ p {
   margin-top: 4rem;
 }
 
-
 /* game-section 🎮🎮🎮🎮🎮*/
 
-#game-section{
-  background-color: #ecc4c4;
+.game__heading {
+  text-decoration: none;
+}
 
+#game-section {
+  background-color: #181d31;
 }
 
 .game-text {
-  font-size: 3.5rem;
-  color: #e66868;
-  padding-top: 2rem;
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: darkgray;
+  padding-top: 1.5rem;
 }
-.game-img{
+.game-img {
   /* display: block; */
   width: 90%;
-  margin-top:3%;
-  
+  margin-top: 3%;
 }
-.btn-play{
+.btn-play {
   margin: 2rem 0.2rem;
 }
-
-
-
-
-
-
 
 /* photo-page📷📷📷📷 */
 
 #photo-page {
-  padding: 1% 0 10%;
-  background-color: #222;
+  padding: 0.5rem;
+  padding-top: 3rem;
+  background-color: #181d31;
 }
 
 .box-images {
@@ -104,9 +126,7 @@ p {
 }
 
 .gallary-box {
-  margin-top: 5%;
   background-color: transparent;
-  border: 1px solid #0a0107;
 }
 
 .box {
@@ -115,9 +135,9 @@ p {
 }
 
 .gallary-text {
-  font-size: 3.7rem;
-  margin-top: 2rem;
-  color: #fff;
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: darkgray;
 }
 
 .hidden {
@@ -170,8 +190,8 @@ p {
   color: white;
   font-size: 2rem;
 }
-.contact-number:hover{
-  color:pink;
+.contact-number:hover {
+  color: pink;
 }
 
 /* social-icons  */
@@ -198,11 +218,9 @@ p,
 
 /* massage error  */
 
-.error{
+.error {
   color: rgb(26, 5, 5);
-  
 }
-
 
 /* medis quearys */
 
@@ -237,7 +255,10 @@ p,
   }
 
   .game-text {
-    font-size: 20px;
+    font-size: 2.4rem;
+  }
+  .gallary-text {
+    font-size: 2.4rem;
   }
   .btn-play {
     font-size: 10px;
