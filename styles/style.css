@@ -2,6 +2,7 @@
 body {
   font-family: "Montserrat";
   text-align: center;
+  background-color: #146c94;
 }
 
 /* special classes */
@@ -147,73 +148,51 @@ p {
 /* section my skills  */
 
 #my-skills {
-  background-color: #fff;
+  background-color: #146c94;
+  padding: 1rem;
 }
 .skill-head {
-  font-size: 4rem;
-  font-family: monospace;
-  margin-top: 1rem;
+  font-size: 3rem;
+  font-family: sans-serif;
+  color: darkgrey;
+  font-weight: 900;
 }
 
 .skill-img,
 .small-heading {
-  font-size: 3rem;
+  font-size: 2.2rem;
+  color: #fff;
   margin-top: 5%;
+  opacity: 0.8;
 }
 .skill-text {
   margin-top: 5%;
-  font-size: 30px;
+  font-size: 20px;
   text-align: left;
+  text-decoration: none;
+  word-spacing: 3px;
+  color: #fff;
+  text-transform: lowercase;
 }
 
 /* section contact */
 #contact-me {
   color: #fff;
+  background-color: #181d31;
+  padding: 1rem;
+  font-family: "Montserrat";
+}
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2.1rem;;
+  padding: 1rem;
+  margin-top: 0.1rem;
 }
 .contact-head {
-  padding-top: 2rem;
-  font-size: 2.3rem;
-  margin-bottom: 2rem;
+  font-size: 2.5rem;
   font-family: "Montserrat";
-  color: #fff;
-}
-.contact-page {
-  background-color: black;
-  font-family: monospace;
-}
-.fa-phone {
-  font-size: 2rem;
-  margin: 5% 0;
-}
-.contact-number {
-  text-decoration: none;
-  color: white;
-  font-size: 2rem;
-}
-.contact-number:hover {
-  color: pink;
-}
-
-/* social-icons  */
-
-p,
-.social-icon {
-  font-size: 2rem;
-  margin-top: 2rem;
-}
-
-.fa-instagram:hover {
-  color: rgb(199, 71, 113);
-}
-
-.fa-facebook:hover {
-  color: blue;
-}
-.fa-twitter:hover {
-  color: rgb(45, 209, 209);
-}
-.fa-envelope:hover {
-  color: rgb(207, 155, 42);
+  color: darkgray;
 }
 
 /* massage error  */
@@ -292,4 +271,10 @@ p,
 
 .hidden {
   display: none;
+}
+
+.col-md-3:hover{
+transform: scale(1.3);
+transition: 0.5s;
+opacity: 0.8;
 }
