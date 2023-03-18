@@ -104,7 +104,6 @@ p {
   padding-top: 1.5rem;
 }
 .game-img {
-  /* display: block; */
   width: 90%;
   margin-top: 3%;
 }
@@ -204,6 +203,13 @@ p {
 /* medis quearys */
 
 @media (max-width: 470px) {
+  .small-heading{
+    font-size: 1.2rem;
+    word-wrap: break-word;
+  }
+  .skill-head {
+    font-size: 2.4rem;
+  }
   #home-page {
     padding-top: 20%;
   }
@@ -229,10 +235,6 @@ p {
     width: 200px;
     margin-top: 20px;
   }
-  .text-sizer {
-    font-size: 1.2rem;
-  }
-
   .game-text {
     font-size: 2.4rem;
   }
@@ -272,9 +274,8 @@ p {
 .hidden {
   display: none;
 }
-
 .col-md-3:hover{
-transform: scale(1.3);
-transition: 0.5s;
-opacity: 0.8;
+  transform: translateY(-20px);
+  transition: 0.3s;
+
 }
