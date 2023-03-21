@@ -1,129 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- boostrap link  -->
+
+    <link rel="icon" href="images/raghu-favicon.ico">
+  
+    <!-- boostrap css -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <!-- font Awsome link -->
+
+        <!-- boostrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin=`"anonymous"></script>
+
+    <!-- font Awsome-->
     <script src="https://kit.fontawesome.com/a87e8bf9f7.js" crossorigin="anonymous"></script>
 
-    <!-- google fonts Link -->
+    <!-- google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&family=Montserrat:wght@700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
   
-  <!-- css link  -->
+  <!-- css -->
     <link rel="stylesheet" href="styles/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Gallary</title>
+    <title>Portfolio</title>
 
-
-
-    
-    <!-- boostrap js link  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin=`"anonymous"></script>
 </head>
 <body>
-
      <!-- page-navbar 💥💥💥💥💥💥💥 -->
 
-     <section id="web-navbar">
-      <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top ">
-         <a class="navbar-brand home text-sizer " href="#home-page"
+     <section id="navigation-bar" class="section">
+      <div class="container-fluid ">
+      <nav class="navbar navbar-expand-lg fixed-top ">
+         <a class="navbar-brand text-white home text-sizer " href="#home-page"
         > <i class="fa-sharp fa-solid fa-house icon text-sizer "></i>Home</a>    
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggler" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#toggler" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon text-sizer"></span>
             </button>
             <div class="collapse navbar-collapse" id="toggler">
                 <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active photo" href="#photo-page">Photos</a>
+              <a class="nav-link active text-white photo" href="#photo-page">Photos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active " href="#game-section">
+              <a class="nav-link active text-white " href="#game-section">
                 Games
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active " href="#contact-me">Contact Me</a>
+              <a class="nav-link active text-white " href="#contact-me">Contact</a>
             </li>
           </ul>
-         </div>
-          </nav>
-</section>
-<!-- home-page 🏠🏠🏠🏠-->
-
-<section id="home-page">
-    <div class="container home-container">
-    <div class="row">
-        <div class="col-xl-6">
-            <h1>Raghunath Javare</h1>
-           <p class="home-text"><i class="fa-solid fa-laptop-code page-icon"></i>#web devloper</p>
-          
-
+        </nav>
         </div>
+</section>
+
+<!-- home-page 🏠🏠🏠🏠-->
+<section id="home-page" class="section">
+    <div class="container home-container">
+      
+    <div class="row">
+
+        <div class="col-xl-6">
+            <h1>I'm <span class="r">R</span>aghunath</h1>
+           <p class="home-text"><i class="fa-solid fa-laptop-code page-icon"></i><span class="w">W</span>eb Devloper</p>
+        </div>
+
         <div class="col-xl-6">
             <a target="_self" href="images/my-img-frofile.png">
             <img src="images/my-img-frofile.png"class="profile-img" alt="profile-image"></a>
         </div>
-    </div> </div>
+
+    </div>
 
     </section>
 
 
     <!-- Game section 🎮🎮🎮🎮 -->
 
-<section id="game-section">
+    <section id="game-section" class="section">
+
+  <h2 class="game-text section__heading">Game Section</h2>
+
   <div id="my-carousel" class="carousel slide"  data-bs-ride="carousel" data-bs-interval="3000">
-    <div class="container-fluid">
-      <h2 class="game-text">You Can Play My Beautiful Games</h2>
-    <div class="carousel-inner">
+    
+      <div class="carousel-inner">
+
       <div class="carousel-item active">
-        <p class=""> you can play dice game only on your desktop not on your mobile.</p>
+        <p class="text-white game__heading"> Dice Game</p>
         <img src="images/my-game-img.png" alt="dice-game" class="game-img "> <br>
-        <a href="https://raghunathjavare.github.io/pig-game/"><button class="btn btn-outline-dark btn-lg btn-play">🎲 Play Now</button></a>
-        <button class="btn btn-download btn-dark btn-lg btn-play"><i class="fa-brands fa-google-play"></i>  download</button> 
+        <a href="https://raghunathjavare.github.io/pig-game/"><button class="btn btn-info btn-lg btn-play">🎲 Play Now</button></a>
+        <button class="btn btn-download btn-secondary btn-lg btn-play"><i class="fa-brands fa-google-play"></i>  download</button> 
       </div>
+
       <div class="carousel-item">
-        <p class=""> you can play guess-number  on your desktop or also on your mobile.</p>
+        <p class="text-white game__heading">Guess My Number</p>
         <img src="images/guess-number.png" alt="guess-number" class="game-img ">
         <br>
-        <a href="https://raghunathjavare.github.io/Guess-Number/"><button class="btn btn-outline-dark btn-lg btn-play">🎲 Play Now</button></a>
-        <button class="btn btn-download btn-dark btn-lg btn-play"><i class="fa-brands fa-google-play"></i>  download</button>  
+        <a href="https://raghunathjavare.github.io/Guess-Number/"><button class="btn btn-info btn-lg btn-play">🎲 Play Now</button></a>
+        <button class="btn btn-download btn-secondary btn-lg btn-play"><i class="fa-brands fa-google-play"></i>  download</button>  
+        </div>
 
       </div>
-          </div>
-      </div>
-      <a class="carousel-control-prev" type="button" data-bs-target="#my-carousel" data-bs-slide="prev">
-      <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-    </a>
-    <a class="carousel-control-next" type="button" data-bs-target="#my-carousel" data-bs-slide="next">
-      <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-    </a>
-    </div>
-
-  </div>
-       
-       
-</div>
-
-
-</section>
       
+      <a class="carousel-control-prev" type="button" data-bs-target="#my-carousel" data-bs-slide="prev">
+      </a>
 
+      <a class="carousel-control-next" type="button" data-bs-target="#my-carousel" data-bs-slide="next">
+    </a>
 
-
+  </div> 
+</section>    
 
 <!-- photo-page 📷📷📷📷📷📷 -->
 
-<section id="photo-page">
+<section id="photo-page" class="section">
   <div class="container-fluid">
-    <h4 class="gallary-text text-sizer"> My Gallary Project</h4>
+    <h4 class="gallary-text text-sizer p-4 section__heading"> Gallery Project</h4>
     <div class="row gallary-box">
           <div class="col-3 box">
               <a class="expand-photo" target="_self" href="images/background-17.jpg">
@@ -310,11 +306,9 @@
       </div>
   </div>
   </section> 
-
-  <section id="my-skills">
+  <section id="my-skills" class="section">
     <div class="container-fluid padding-applyer">
-        
-        <h3 class="skill-head text-sizer">My Skills</h3>
+        <h3 class="skill-head text-sizer section__heading">My Skills</h3>
         <h5 class="small-heading text-sizer">Web-Design & programming</h5>
         <div class="row">
          <img class="skill-img" src="images/code-img.jpg" alt="laptop-img">
@@ -324,38 +318,28 @@
 </div>
   </section>
 
-  <!-- section contact me  -->
+  <!-- section contact  -->
 
-    <section id="contact-me" class="paddding-aplyer">
-      <div class="container-fluid shadow min-vh-100 py-2 contact-page">
-        <h2 class="contact-head text-sizer">❤️ Contact Me ❤️</h2>
-        <a href="tel:8459290044" class="contact-number text-sizer"> <i class="fa-solid fa-phone"></i> 8459290044</a>
-          <div class="row">
+    <section id="contact-me" class="paddding-aplyer section">
+      <h2 class="contact-head text-sizer"> Contact Me</h2>
+          <div class="container-fluid contact">
               <div class="col-md-3">
                    <a class="contact-link" href="https://www.instagram.com/javare_raghunath/"> <i class="fa-brands fa-instagram social-icon"></i></a>
-                  <p>Instagram </p>
-                </a>
                   </div>
                    <div class="col-md-3">
                     <a class="contact-link" href="https://www.facebook.com/raghunath.javare.7"><i class="fa-brands fa-facebook social-icon"></i></a>
-                  <p>facebook </p>
                   </div>
                    <div class="col-md-3">
                    <a class="contact-link" href="https://twitter.com/RaghunathJavare"> <i class="fa-brands fa-twitter  social-icon"></i></a>
-                  <p>Twitter</p>
                   </div>
                    <div class="col-md-3">
                     <a href="mailto:raghunath.javare@gmail.com"> <i class="fa-solid fa-envelope  social-icon"></i></a>                   
-                  <p>Mail</p>
                   </div>
                 </div>
                
           </div>
-      </div>
       </section>
-  </section>
 
-   <script src="scripts/script.js">  
-   </script> 
+   <script src="scripts/script.js"></script> 
 </body>
 </html>

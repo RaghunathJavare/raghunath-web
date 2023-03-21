@@ -2,6 +2,7 @@
 body {
   font-family: "Montserrat";
   text-align: center;
+  background-color: #146c94;
 }
 
 /* special classes */
@@ -10,18 +11,18 @@ body {
   padding: 3% 10%;
 }
 
-
 /* section web navbar  */
-
-#web-navbar {
-  text-align: left;
-  background-color: hsl(0, 0%, 13%);
+.navbar {
+  background-color: #18122b;
+  box-shadow: 1px 1px #fff;
 }
 .nav-item {
-  margin-left: 3rem;
+  padding: 0 1rem;
   font-size: 1.2rem;
 }
-
+.text-white:hover {
+  background-color: rgba(127, 255, 212, 0.567);
+}
 .home {
   font-size: 20px;
 }
@@ -33,26 +34,48 @@ body {
   padding-right: 10px;
 }
 
-
 /* home-page🏠🏠🏠🏠 */
 
 #home-page {
-  background-color: #222;
+  background-color: #18122b;
   color: white;
   padding: 12% 15% 10%;
 }
 .profile-img {
   width: 20rem;
+  margin-top: 1rem;
+  opacity: 0.9;
+  border: 1px outset #18122b;
+  border-radius: 50%;
+  animation: rotate 4s linear infinite;
 }
-
+@keyframes rotate {
+  10% {
+    transform: translate(-300px, -100px);
+    box-shadow: 0px 0px 1rem orange;
+  }
+  20% {
+    box-shadow: 0px 0px 2rem orange;
+    
+  }
+}
 h1 {
-  font-size: 4rem;
-  animation: mymove 5s linear infinite;
+  font-size: 3.5rem;
+}
+.rotate__heading{
+  transform: rotate(360deg);
 }
 p {
   font-size: 2rem;
   margin-top: 18rem;
-  text-transform: capitalize;
+  text-decoration: underline;
+}
+.w {
+  color: rgba(0, 255, 255, 0.718);
+}
+.r {
+  color: rgba(0, 255, 255, 0.718);
+  text-decoration: underline;
 }
 .page-icon {
   margin-right: 2rem;
@@ -61,40 +84,36 @@ p {
   margin-top: 4rem;
 }
 
-
 /* game-section 🎮🎮🎮🎮🎮*/
 
-#game-section{
-  background-color: #ecc4c4;
+.game__heading {
+  text-decoration: none;
+}
 
+#game-section {
+  background-color: #181d31;
 }
 
 .game-text {
-  font-size: 3.5rem;
-  color: #e66868;
-  padding-top: 2rem;
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: darkgray;
+  padding-top: 1.5rem;
 }
-.game-img{
-  /* display: block; */
+.game-img {
   width: 90%;
-  margin-top:3%;
-  
+  margin-top: 3%;
 }
-.btn-play{
+.btn-play {
   margin: 2rem 0.2rem;
 }
-
-
-
-
-
-
 
 /* photo-page📷📷📷📷 */
 
 #photo-page {
-  padding: 1% 0 10%;
-  background-color: #222;
+  padding: 0.5rem;
+  padding-top: 3rem;
+  background-color: #181d31;
 }
 
 .box-images {
@@ -104,9 +123,7 @@ p {
 }
 
 .gallary-box {
-  margin-top: 5%;
   background-color: transparent;
-  border: 1px solid #0a0107;
 }
 
 .box {
@@ -115,9 +132,9 @@ p {
 }
 
 .gallary-text {
-  font-size: 3.7rem;
-  margin-top: 2rem;
-  color: #fff;
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: darkgray;
 }
 
 .hidden {
@@ -127,86 +144,79 @@ p {
 /* section my skills  */
 
 #my-skills {
-  background-color: #fff;
+  background-color: #146c94;
+  padding: 1rem;
 }
 .skill-head {
-  font-size: 4rem;
-  font-family: monospace;
-  margin-top: 1rem;
+  font-size: 3rem;
+  font-family: sans-serif;
+  color: darkgrey;
+  font-weight: 900;
 }
 
 .skill-img,
 .small-heading {
-  font-size: 3rem;
+  font-size: 2.2rem;
+  color: #fff;
   margin-top: 5%;
+  opacity: 0.8;
 }
 .skill-text {
   margin-top: 5%;
-  font-size: 30px;
+  font-size: 20px;
   text-align: left;
+  text-decoration: none;
+  word-spacing: 3px;
+  color: #fff;
+  text-transform: lowercase;
 }
 
 /* section contact */
 #contact-me {
   color: #fff;
+  background-color: #181d31;
+  padding: 1rem;
+  font-family: "Montserrat";
+}
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2.1rem;
+  padding: 1rem;
+  margin-top: 0.1rem;
 }
 .contact-head {
-  padding-top: 2rem;
-  font-size: 2.3rem;
-  margin-bottom: 2rem;
+  font-size: 2.5rem;
   font-family: "Montserrat";
-  color: #fff;
-}
-.contact-page {
-  background-color: black;
-  font-family: monospace;
-}
-.fa-phone {
-  font-size: 2rem;
-  margin: 5% 0;
-}
-.contact-number {
-  text-decoration: none;
-  color: white;
-  font-size: 2rem;
-}
-.contact-number:hover{
-  color:pink;
-}
-
-/* social-icons  */
-
-p,
-.social-icon {
-  font-size: 2rem;
-  margin-top: 2rem;
-}
-
-.fa-instagram:hover {
-  color: rgb(199, 71, 113);
-}
-
-.fa-facebook:hover {
-  color: blue;
-}
-.fa-twitter:hover {
-  color: rgb(45, 209, 209);
-}
-.fa-envelope:hover {
-  color: rgb(207, 155, 42);
+  color: darkgray;
 }
 
 /* massage error  */
 
-.error{
+.error {
   color: rgb(26, 5, 5);
-  
 }
-
 
 /* medis quearys */
 
 @media (max-width: 470px) {
+  @keyframes rotate {
+    10% {
+      transform: translate(-0px, -150px);
+      box-shadow: 0px 0px 1rem yellow;
+    }
+    20% {
+     
+      box-shadow: 0px 0px 2rem yellow;
+    }
+  }
+  .small-heading {
+    font-size: 1.2rem;
+    word-wrap: break-word;
+  }
+  .skill-head {
+    font-size: 2.4rem;
+  }
   #home-page {
     padding-top: 20%;
   }
@@ -232,12 +242,11 @@ p,
     width: 200px;
     margin-top: 20px;
   }
-  .text-sizer {
-    font-size: 1.2rem;
-  }
-
   .game-text {
-    font-size: 20px;
+    font-size: 2.4rem;
+  }
+  .gallary-text {
+    font-size: 2.4rem;
   }
   .btn-play {
     font-size: 10px;
@@ -270,5 +279,22 @@ p,
 /* display hidden */
 
 .hidden {
+  display: none;
+}
+.col-md-3:hover {
+  transform: translateY(-20px);
+  transition: 0.3s;
+}
+.box {
+  opacity: 0.8;
+}
+.box:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.heading__hidden{
+  transform: translateY(8rem);
   display: none;
 }
