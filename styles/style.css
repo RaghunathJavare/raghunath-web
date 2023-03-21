@@ -293,3 +293,8 @@ p {
   opacity: 1;
   transition: 0.3s;
 }
+
+.heading__hidden{
+  transform: translateY(8rem);
+  display: none;
+}
