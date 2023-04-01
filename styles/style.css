@@ -153,7 +153,7 @@ p {
 .contact-head {
   padding-top: 2rem;
   font-size: 2.3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   font-family: "Montserrat";
   color: #fff;
 }
@@ -165,20 +165,20 @@ p {
   font-size: 2rem;
   margin: 5% 0;
 }
-.contact-number {
+/* .contact-number {
   text-decoration: none;
   color: white;
   font-size: 2rem;
-}
-.contact-number:hover{
+} */
+/* .contact-number:hover{
   color:pink;
-}
+} */
 
 /* social-icons  */
 
 p,
 .social-icon {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-top: 2rem;
 }
 
@@ -196,11 +196,9 @@ p,
   color: rgb(207, 155, 42);
 }
 
-/* massage error  */
-
-.error{
-  color: rgb(26, 5, 5);
-  
+.social-icon:hover{
+  transform: translateY(-30%);
+  transition: 0.2s;
 }
 
 
@@ -247,6 +245,9 @@ p,
 @media (max-width: 500px) {
   .box-images {
     width: 120%;
+  }
+  .social-icon{
+    font-size: 2rem;
   }
 }
 
