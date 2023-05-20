@@ -1,27 +1,22 @@
 "use strict";
 
 // Select Elements
-const btnHelp = document.querySelector(".btn-help");
-const btnBack = document.querySelector(".btn-back");
-const imgDice = document.querySelector(".game-img");
-const btnDownload = document.querySelector(".btn-download");
-const sectionGame = document.getElementById("game-section");
-console.log(sectionGame);
-console.log(btnDownload);
+const nav = document.querySelector(".navbar");
 
-btnDownload.addEventListener("click", function () {
-  errorMassage.classList.add("error");
-});
+//////////////////////////////////////////////////////////////////////////////
 
-// btnBack.classList.add("hidden");
-// console.log(btnHelp);
+const eventHandler = function (e) {
+  if (e.target.classList.contains("nav-link")) {
+    const target = e.target;
+    const link = target.closest(".navbar").querySelectorAll(".nav-link");
+    const home = target.closest(".navbar").querySelector(".home");
+    if (!link) return;
+    link.forEach((l) => {
+      if (l !== target) l.style.opacity = this;
+      home.style.opacity=this
+    });
+  }
+};
 
-// btnHelp.addEventListener("click", function () {
-//   imgDice.src = "images/background-1.jpg";
-//   btnBack.classList.remove("hidden");
-// });
-
-// btnBack.addEventListener("click", function () {
-//   imgDice.src = "images/my-game-img.png";
-//   btnBack.classList.add("hidden");
-// });
+nav.addEventListener("mouseover", eventHandler.bind(0.5));
+nav.addEventListener("mouseout", eventHandler.bind(1));
