@@ -2,12 +2,24 @@
 body {
   font-family: "Montserrat";
   text-align: center;
+  background-color: #222;
 }
 
 /* special classes */
 
 .padding-applyer {
   padding: 3% 10%;
+}
+.section__hidden{
+  opacity:0;
+  transform: translateY(8rem);
+}
+
+.section{
+  background-color: #222;
+  transition: transform 1s, opacity 1s;
+  color: #fff;
+  /* border-bottom: #ffffff80 solid 1px; */
 }
 
 
@@ -63,15 +75,14 @@ p {
 
 
 /* game-section 🎮🎮🎮🎮🎮*/
-
+/* 
 #game-section{
   background-color: #ecc4c4;
-
-}
+  transition: transform 1s, opacity 1s;
+} */
 
 .game-text {
   font-size: 3.5rem;
-  color: #e66868;
   padding-top: 2rem;
 }
 .game-img{
@@ -94,7 +105,7 @@ p {
 
 #photo-page {
   padding: 1% 0 10%;
-  background-color: #222;
+
 }
 
 .box-images {
@@ -125,10 +136,12 @@ p {
 }
 
 /* section my skills  */
-
+/* 
 #my-skills {
   background-color: #fff;
-}
+  transition: transform 1s, opacity 1s;
+
+} */
 .skill-head {
   font-size: 4rem;
   font-family: monospace;
@@ -147,9 +160,11 @@ p {
 }
 
 /* section contact */
-#contact-me {
+/* #contact-me {
   color: #fff;
-}
+  transition: transform 1s, opacity 1s;
+
+} */
 .contact-head {
   padding-top: 2rem;
   font-size: 2.3rem;
@@ -157,24 +172,12 @@ p {
   font-family: "Montserrat";
   color: #fff;
 }
-.contact-page {
-  background-color: black;
-  font-family: monospace;
-}
+
 .fa-phone {
   font-size: 2rem;
   margin: 5% 0;
 }
-/* .contact-number {
-  text-decoration: none;
-  color: white;
-  font-size: 2rem;
-} */
-/* .contact-number:hover{
-  color:pink;
-} */
 
-/* social-icons  */
 
 p,
 .social-icon {
@@ -204,7 +207,7 @@ p,
 
 /* medis quearys */
 
-@media (max-width: 470px) {
+@media (max-width: 600px) {
   #home-page {
     padding-top: 20%;
   }
@@ -269,7 +272,3 @@ p,
 }
 
 /* display hidden */
-
-.hidden {
-  display: none;
-}
