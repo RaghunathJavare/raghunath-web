@@ -3,11 +3,14 @@
 
 <head>
 	<!-- boostrap link  -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
 	<!-- font Awsome link -->
 	<script src="https://kit.fontawesome.com/a87e8bf9f7.js" crossorigin="anonymous"></script>
 	<!-- google fonts Link -->
-	<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&family=Montserrat:wght@700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&family=Montserrat:wght@700&family=Ubuntu:wght@300&display=swap"
+		rel="stylesheet">
 	<!-- css link  -->
 	<link rel="stylesheet" href="styles/style.css">
 	<meta charset="UTF-8">
@@ -15,7 +18,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Raghunath-web</title>
 	<!-- boostrap js link  -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin=` "anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+		crossorigin=` "anonymous"></script>
 </head>
 
 <body>
@@ -23,8 +28,11 @@
 	<section id="web-navbar">
 		<div class="container-fluid">
 			<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top ">
-				<a class="navbar-brand home text-sizer " href="#home-page"> <i class="fa-sharp fa-solid fa-house icon text-sizer "></i>Home</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggler" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon text-sizer"></span> </button>
+				<a class="navbar-brand home text-sizer " href="#home-page"> <i
+						class="fa-sharp fa-solid fa-house icon text-sizer "></i>Home</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggler"
+					aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation"> <span
+						class="navbar-toggler-icon text-sizer"></span> </button>
 				<div class="collapse navbar-collapse" id="toggler">
 					<ul class="navbar-nav">
 						<li class="nav-item"> <a class="nav-link active photo" href="#photo-page">Photos</a> </li>
@@ -45,44 +53,67 @@
 					<p class="home-text"><i class="fa-solid fa-laptop-code page-icon"></i>#web devloper</p>
 				</div>
 				<div class="col-xl-6">
-					<a target="_self" href="images/myprofile.png"> <img src="images/myprofile.png" class="profile-img" alt="profile-image"></a>
+					<a target="_self" href="images/myprofile.png"> <img src="images/myprofile.png" class="profile-img"
+							alt="profile-image"></a>
 				</div>
 			</div>
 		</div>
 	</section>
 
 
-	<!-- Game section 🎮🎮🎮🎮 -->
-	<section class="section " id="game-section">
-		<div id="my-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-			<div class="container-fluid">
-				<h2 class="game-text">You Can See My Beautiful Projects</h2>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						 <img src="images/my-game-img.png" alt="dice-game" class="game-img">
-						<br>
-						<a href="https://raghunathjavare.github.io/pig-game/">
-							<button class="btn btn-dark btn-lg btn-play">🎲 Play Now</button>
-						</a>
-						<button class="btn btn-download btn-dark btn-lg btn-play"><i class="fa-brands fa-google-play"></i> download</button>
-					</div>
-					<div class="carousel-item">
-						<img src="images/guess-number.png" alt="guess-number" class="game-img ">
-						<br>
-						<a href="https://raghunathjavare.github.io/Guess-Number/">
-							<button class="btn btn-dark btn-lg btn-play">🎲 Play Now</button>
-						</a>
-						<button class="btn btn-download btn-dark btn-lg btn-play"><i class="fa-brands fa-google-play"></i>download</button>
-					</div>
-				</div>
+	<!-- project section  -->
+	<section class="section padding-applyer" id="project-section">
+		<h2 class="project--heading">My Projects</h2>
+
+
+		<div class="container-fluid project-section">
+
+			<div class="project--1">
+				<img src="images/game-img.png" alt="dice-game" class="project--img">
+
 			</div>
-			<a class="carousel-control-prev" type="button" data-bs-target="#my-carousel" data-bs-slide="prev">
-				<!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> --></a>
-			<a class="carousel-control-next" type="button" data-bs-target="#my-carousel" data-bs-slide="next">
-				<!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> --></a>
+			<div class="project">
+				<h4 class="project--text">you can easy to play this game in your desktop not in mobile. And you can play with your partner it's a 2 player game.Have a fun!
+					
+				</h4>
+
+
+			</div>
+
+			<div class="project">
+				<h4 class="project--text">
+					Guess Number is a game you have to guess just a number.You can play this game also in your mobile.have a fun!
+				</h4>
+
+
+			</div>
+			<div class="project project--2">
+				<img src="images/game-img-1.png" alt="guess-number" class="project--img ">
+
+
+			</div>
+			<div class="project project--3">
+				<img src="images/todo-img.png" alt="guess-number" class="project--img ">
+
+			</div>
+			<div class="project">
+				<h4 class="project--text">With To-Do-List App you can make your day even better all just you have to do is put your task in the app.</h4>
+
+			</div>
+			<div class="project">
+				<h4 class="project--text">
+					You know that calculator can handle complex mathematical operations,including large numbers,decimals, and intricate formulas,ensuring accurate results.This allows users to fucus on higher-level tasks or complete calculations more efficiently,saving valuable time.
+				</h4>
+
+			</div>
+			<div class="project project--4">
+				<img src="images/calc-img.png" alt="guess-number" class="project--img ">
+
+			</div>
+
 		</div>
-		</div>
-		</div>
+
+
 	</section>
 	<!-- photo-page 📷📷📷📷📷📷 -->
 	<section class="section" id="photo-page">
@@ -90,100 +121,132 @@
 			<h4 class="gallary-text text-sizer"> My Gallary Project</h4>
 			<div class="row gallary-box">
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-17.jpg"> <img class="box-images" src="images/background-17.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-17.jpg"> <img class="box-images"
+							src="images/background-17.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-2.jpg"> <img class="box-images" src="images/background-2.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-2.jpg"> <img class="box-images"
+							src="images/background-2.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-19.jpg"> <img class="box-images" src="images/background-19.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-19.jpg"> <img class="box-images"
+							src="images/background-19.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-4.jpg"> <img class="box-images" src="images/background-4.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-4.jpg"> <img class="box-images"
+							src="images/background-4.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-5.jpg"> <img class="box-images" src="images/background-5.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-5.jpg"> <img class="box-images"
+							src="images/background-5.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-6.jpg"> <img class="box-images" src="images/background-6.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-6.jpg"> <img class="box-images"
+							src="images/background-6.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-7.jpg"> <img class="box-images" src="images/background-7.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-7.jpg"> <img class="box-images"
+							src="images/background-7.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-8.jpg"> <img class="box-images" src="images/background-8.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-8.jpg"> <img class="box-images"
+							src="images/background-8.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-18.jpg"> <img class="box-images" src="images/background-18.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-18.jpg"> <img class="box-images"
+							src="images/background-18.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-10.jpg"> <img class="box-images" src="images/background-10.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-10.jpg"> <img class="box-images"
+							src="images/background-10.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-11.jpg"> <img class="box-images" src="images/background-11.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-11.jpg"> <img class="box-images"
+							src="images/background-11.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-12.jpg"> <img class="box-images" src="images/background-12.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-12.jpg"> <img class="box-images"
+							src="images/background-12.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-13.jpg"> <img class="box-images" src="images/background-13.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-13.jpg"> <img class="box-images"
+							src="images/background-13.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-14.jpg"> <img class="box-images" src="images/background-14.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-14.jpg"> <img class="box-images"
+							src="images/background-14.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-15.jpg"> <img class="box-images" src="images/background-15.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-15.jpg"> <img class="box-images"
+							src="images/background-15.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-16.jpg"> <img class="box-images" src="images/background-16.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-16.jpg"> <img class="box-images"
+							src="images/background-16.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-12.jpg"> <img class="box-images" src="images/background-12.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-12.jpg"> <img class="box-images"
+							src="images/background-12.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-15.jpg"> <img class="box-images" src="images/background-15.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-15.jpg"> <img class="box-images"
+							src="images/background-15.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-16.jpg"> <img class="box-images" src="images/background-16.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-16.jpg"> <img class="box-images"
+							src="images/background-16.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-19.jpg"> <img class="box-images" src="images/background-19.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-19.jpg"> <img class="box-images"
+							src="images/background-19.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-6.jpg"> <img class="box-images" src="images/background-6.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-6.jpg"> <img class="box-images"
+							src="images/background-6.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-17.jpg"> <img class="box-images" src="images/background-17.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-17.jpg"> <img class="box-images"
+							src="images/background-17.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-18.jpg"> <img class="box-images" src="images/background-18.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-18.jpg"> <img class="box-images"
+							src="images/background-18.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/background-6.jpg"> <img class="box-images" src="images/background-6.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/background-6.jpg"> <img class="box-images"
+							src="images/background-6.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/img-1.jpeg"> <img class="box-images" src="images/img-1.jpeg"> </a>
+					<a class="expand-photo" target="_self" href="images/img-1.jpeg"> <img class="box-images"
+							src="images/img-1.jpeg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/img-2.jpeg"> <img class="box-images" src="images/img-2.jpeg"> </a>
+					<a class="expand-photo" target="_self" href="images/img-2.jpeg"> <img class="box-images"
+							src="images/img-2.jpeg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/img-3.jpg"> <img class="box-images" src="images/img-3.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/img-3.jpg"> <img class="box-images"
+							src="images/img-3.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/img-4.jpg"> <img class="box-images" src="images/img-4.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/img-4.jpg"> <img class="box-images"
+							src="images/img-4.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/img-5.jpg"> <img class="box-images" src="images/img-5.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/img-5.jpg"> <img class="box-images"
+							src="images/img-5.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/img-6.jpg"> <img class="box-images" src="images/img-6.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/img-6.jpg"> <img class="box-images"
+							src="images/img-6.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/img-7.jpg"> <img class="box-images" src="images/img-7.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/img-7.jpg"> <img class="box-images"
+							src="images/img-7.jpg"> </a>
 				</div>
 				<div class="col-3 box">
-					<a class="expand-photo" target="_self" href="images/img-8.jpg"> <img class="box-images" src="images/img-8.jpg"> </a>
+					<a class="expand-photo" target="_self" href="images/img-8.jpg"> <img class="box-images"
+							src="images/img-8.jpg"> </a>
 				</div>
 			</div>
 		</div>
@@ -193,7 +256,9 @@
 			<h3 class="skill-head text-sizer">My Skills</h3>
 			<h5 class="small-heading text-sizer">Web-Design & programming</h5>
 			<div class="row"> <img class="skill-img" src="images/code-img.jpg" alt="laptop-img">
-				<p class="skill-text text-sizer">when i was 17 i often used to see some website on google. and at that time i was wondering about websites then i think i can also make my own websites. one thing i like the most is i can create websites for free😊may be its sounds like obvious but that's truth. </p>
+				<p class="skill-text text-sizer">when i was 17 i often used to see some website on google. and at that
+					time i was wondering about websites then i think i can also make my own websites. one thing i like
+					the most is i can create websites for free😊may be its sounds like obvious but that's truth. </p>
 			</div>
 		</div>
 	</section>
@@ -204,7 +269,8 @@
 			<!-- <a href="tel:8459290044" class="contact-number text-sizer"> <i class="fa-solid fa-phone"></i> 8459290044</a> -->
 			<div class="row">
 				<div class="col-md-3">
-					<a class="contact-link" href="https://www.instagram.com/javare_raghunath/"> <i class="fa-brands fa-instagram social-icon"></i></a>
+					<a class="contact-link" href="https://www.instagram.com/javare_raghunath/"> <i
+							class="fa-brands fa-instagram social-icon"></i></a>
 					<p>Instagram </p>
 					</a>
 				</div>
@@ -213,7 +279,8 @@
 					<p>facebook </p>
 				</div>
 				<div class="col-md-3">
-					<a class="contact-link" href="https://twitter.com/RaghunathJavare"> <i class="fa-brands fa-twitter  social-icon"></i></a>
+					<a class="contact-link" href="https://twitter.com/RaghunathJavare"> <i
+							class="fa-brands fa-twitter  social-icon"></i></a>
 					<p>Twitter</p>
 				</div>
 				<div class="col-md-3">
@@ -229,3 +296,8 @@
 </body>
 
 </html>
+<!-- 
+
+-->
+<!-- 
+ -->

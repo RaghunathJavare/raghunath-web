@@ -10,18 +10,17 @@ body {
 .padding-applyer {
   padding: 3% 10%;
 }
-.section__hidden{
-  opacity:0;
+.section__hidden {
+  opacity: 0;
   transform: translateY(8rem);
 }
 
-.section{
+.section {
   background-color: #222;
   transition: transform 1s, opacity 1s;
   color: #fff;
   /* border-bottom: #ffffff80 solid 1px; */
 }
-
 
 /* section web navbar  */
 
@@ -44,7 +43,6 @@ body {
   margin-left: 20px;
   padding-right: 10px;
 }
-
 
 /* home-page🏠🏠🏠🏠 */
 
@@ -69,43 +67,42 @@ p {
 .page-icon {
   margin-right: 2rem;
 }
-.home-text {
-  margin-top: 4rem;
-}
-
 
 /* game-section 🎮🎮🎮🎮🎮*/
-/* 
-#game-section{
-  background-color: #ecc4c4;
-  transition: transform 1s, opacity 1s;
-} */
 
-.game-text {
+.project-section {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(3, 2fr);
+  grid-row-gap: 5rem;
+}
+
+.project--heading {
   font-size: 3.5rem;
-  padding-top: 2rem;
+  padding: 2rem;
 }
-.game-img{
-  /* display: block; */
+.project--text {
+  font-size: 1.5rem;
+  text-align: left;
+}
+.project--img {
   width: 90%;
-  margin-top:3%;
-  
 }
-.btn-play{
-  margin: 2rem 0.2rem;
+.btn-play {
+  margin: 1rem;
 }
 
-
-
-
-
-
+.project--active {
+  transform: scale(1.1);
+  transition: 0.8s;
+}
 
 /* photo-page📷📷📷📷 */
 
 #photo-page {
   padding: 1% 0 10%;
-
 }
 
 .box-images {
@@ -136,12 +133,6 @@ p {
 }
 
 /* section my skills  */
-/* 
-#my-skills {
-  background-color: #fff;
-  transition: transform 1s, opacity 1s;
-
-} */
 .skill-head {
   font-size: 4rem;
   font-family: monospace;
@@ -160,11 +151,7 @@ p {
 }
 
 /* section contact */
-/* #contact-me {
-  color: #fff;
-  transition: transform 1s, opacity 1s;
 
-} */
 .contact-head {
   padding-top: 2rem;
   font-size: 2.3rem;
@@ -177,7 +164,6 @@ p {
   font-size: 2rem;
   margin: 5% 0;
 }
-
 
 p,
 .social-icon {
@@ -199,13 +185,18 @@ p,
   color: rgb(207, 155, 42);
 }
 
-.social-icon:hover{
+.social-icon:hover {
   transform: translateY(-30%);
   transition: 0.2s;
 }
 
-
 /* medis quearys */
+
+@media (max-width: 1000px) {
+  .project--text {
+    font-size: 1rem;
+  }
+}
 
 @media (max-width: 600px) {
   #home-page {
@@ -243,14 +234,22 @@ p,
   .btn-play {
     font-size: 10px;
   }
+  .project--text{
+    font-size: 8px;
+  }
 }
+
+
 
 @media (max-width: 500px) {
   .box-images {
     width: 120%;
   }
-  .social-icon{
+  .social-icon {
     font-size: 2rem;
+  }
+  .project--heading{
+    font-size: 1rem;
   }
 }
 

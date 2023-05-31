@@ -26,9 +26,8 @@ const sections = document.querySelectorAll(".section");
 const revealSect = function (entries, observer) {
   const [entry] = entries;
   if (!entry.isIntersecting) return;
-  entry.target.classList.remove('section__hidden')
-  observer.unobserve(entry.target)
- 
+  entry.target.classList.remove("section__hidden");
+  observer.unobserve(entry.target);
 };
 
 const observer = new IntersectionObserver(revealSect, {
@@ -38,5 +37,23 @@ const observer = new IntersectionObserver(revealSect, {
 
 sections.forEach((section) => {
   observer.observe(section);
-  section.classList.add('section__hidden')
+  section.classList.add("section__hidden");
 });
+
+// Scaleing with images
+
+const imgs = document.querySelectorAll(".project--img");
+const scaling = function (entries) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  imgs.forEach((img) => img.classList.remove("project--active"));
+  entry.target.classList.add("project--active");
+};
+
+const imgObserve = new IntersectionObserver(scaling, {
+  root: null,
+  threshold: 0,
+  rootMargin: "-300px",
+});
+
+imgs.forEach((img) => imgObserve.observe(img));
