@@ -19,7 +19,7 @@ body {
   background-color: #222;
   transition: transform 1s, opacity 1s;
   color: #fff;
-  /* border-bottom: #ffffff80 solid 1px; */
+  border-bottom: #ffffff80 solid 1px;
 }
 
 /* section web navbar  */
@@ -72,11 +72,14 @@ p {
 
 .project-section {
   display: grid;
+  grid-template-columns: repeat(2,1fr);
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(2, 2fr);
-  grid-template-rows: repeat(3, 2fr);
-  grid-row-gap: 5rem;
+  grid-gap: 2rem;
+}
+.images {
+  background-color: rgb(48, 43, 43);
+  border-radius: 15px;
 }
 
 .project--heading {
@@ -88,7 +91,9 @@ p {
   text-align: left;
 }
 .project--img {
-  width: 100%;
+  width: 90%;
+  margin: 5%;
+  padding: 5%;
 }
 .btn-play {
   margin: 1rem;
@@ -97,6 +102,8 @@ p {
 .project--active {
   transform: scale(1.1);
   transition: 0.8s;
+  border: 1px solid #fff;
+  border-radius: 10px;
 }
 
 /* photo-page📷📷📷📷 */
@@ -119,7 +126,7 @@ p {
 
 .box {
   margin: 1% 0;
-  border: 1px solit rgb(43, 3, 3);
+  border: 1px solid rgb(43, 3, 3);
 }
 
 .gallary-text {
@@ -238,14 +245,11 @@ p,
   .padding-applyer {
     padding: 3% 2%;
   }
-  .project--img {
-    width: 110%;
-    float: right;
-  }
+  
   .project--text {
     font-size: 14px;
   }
-  .project--heading{
+  .project--heading {
     font-size: 1.5rem;
   }
 }
