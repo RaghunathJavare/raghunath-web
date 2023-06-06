@@ -48,14 +48,11 @@ const scaling = function (entries) {
   if (!entry.isIntersecting) return;
   imgs.forEach((img) => img.classList.remove("project--active"));
   entry.target.classList.add("project--active");
-  
-  
 };
 
 const imgObserve = new IntersectionObserver(scaling, {
   root: null,
-  threshold:0,
-  rootMargin: "-200px",
+  threshold: 0,
 });
 
 imgs.forEach((img) => imgObserve.observe(img));

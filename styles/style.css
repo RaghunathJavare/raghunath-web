@@ -2,7 +2,7 @@
 body {
   font-family: "Montserrat";
   text-align: center;
-  background-color: #222;
+  background-color: black;
 }
 
 /* special classes */
@@ -16,7 +16,6 @@ body {
 }
 
 .section {
-  background-color: #222;
   transition: transform 1s, opacity 1s;
   color: #fff;
   border-bottom: #ffffff80 solid 1px;
@@ -26,7 +25,6 @@ body {
 
 #web-navbar {
   text-align: left;
-  background-color: hsl(0, 0%, 13%);
 }
 .nav-item {
   margin-left: 3rem;
@@ -47,7 +45,6 @@ body {
 /* home-page🏠🏠🏠🏠 */
 
 #home-page {
-  background-color: #222;
   color: white;
   padding: 12% 15% 10%;
 }
@@ -68,33 +65,38 @@ p {
   margin-right: 2rem;
 }
 
-/* game-section 🎮🎮🎮🎮🎮*/
+/* pro ject-section */
 
-.project-section {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
+#project-section{
+  padding: 0 1%;
+}
+
+.project {
+  padding: 3% 0 6%;
   justify-content: center;
   align-items: center;
-  grid-gap: 2rem;
+  border-bottom: 1px solid #ffffff5a;
 }
+
 .images {
-  background-color: rgb(48, 43, 43);
   border-radius: 15px;
+  margin-bottom: 10%;
 }
 
 .project--heading {
   font-size: 3.5rem;
-  padding: 2rem;
+ padding: 2rem;
 }
 .project--text {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: left;
 }
 .project--img {
   width: 90%;
-  margin: 5%;
   padding: 5%;
+  box-shadow: 5px 8px 19px rgba(120, 112, 112, 0.396);
 }
+
 .btn-play {
   margin: 1rem;
 }
@@ -102,7 +104,6 @@ p {
 .project--active {
   transform: scale(1.1);
   transition: 0.8s;
-  border: 1px solid #fff;
   border-radius: 10px;
 }
 
@@ -120,7 +121,6 @@ p {
 
 .gallary-box {
   margin-top: 5%;
-  background-color: transparent;
   border: 1px solid #0a0107;
 }
 
@@ -201,7 +201,7 @@ p,
 
 @media (max-width: 1000px) {
   .project--text {
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -241,17 +241,11 @@ p,
   .btn-play {
     font-size: 10px;
   }
-  #project--section,
-  .padding-applyer {
-    padding: 3% 2%;
+
+  .project--text {
+    font-size:1.3rem;
   }
   
-  .project--text {
-    font-size: 14px;
-  }
-  .project--heading {
-    font-size: 1.5rem;
-  }
 }
 
 @media (max-width: 500px) {
@@ -280,4 +274,9 @@ p,
   }
 }
 
-/* display hidden */
+@keyframes rotater {
+  100% {
+    transform: rotate(360%);
+  }
+}
+
