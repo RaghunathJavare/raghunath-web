@@ -107,33 +107,6 @@ p {
   border-radius: 10px;
 }
 
-/* photo-page📷📷📷📷 */
-
-#photo-page {
-  padding: 1% 0 10%;
-}
-
-.box-images {
-  width: 104%;
-  height: 100%;
-  border: 1px solid #fff;
-}
-
-.gallary-box {
-  margin-top: 5%;
-  border: 1px solid #0a0107;
-}
-
-.box {
-  margin: 1% 0;
-  border: 1px solid rgb(43, 3, 3);
-}
-
-.gallary-text {
-  font-size: 3.7rem;
-  margin-top: 2rem;
-  color: #fff;
-}
 
 .hidden {
   display: none;
@@ -249,13 +222,15 @@ p,
 }
 
 @media (max-width: 500px) {
-  .box-images {
-    width: 120%;
-  }
+  
   .social-icon {
     font-size: 2rem;
   }
+  
 }
+
+
+
 
 /* adding keyFrames  */
 
